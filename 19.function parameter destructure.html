@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            parameter destructure
+        </title>
+    </head>
+    <body>
+
+        <script>
+            const myInfo=({Name,ID})=>{
+                document.write(Name+"\t");
+                document.write(ID);
+            }
+            let mySelf={
+                Name:"Rubel",
+                ID:203
+            }
+            myInfo(mySelf);
+        </script>
+    </body>
+</html>

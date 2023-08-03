@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            promise
+        </title>
+    </head>
+    <body>
+
+        <script>
+//how to create promise*** akta promise er 3ta parameter pending,resolve,reject
+//promise jakon resolve hobe takon then function call hobe and promise jakon reject hobe takon catch function call hobe.
+//how to use promise
+//how to run multiple promise
+//race()
+//promise chaining 
+
+            const promise1=new Promise((resolve,reject)=>{
+                let completedPromise=false;
+                if(completedPromise){
+                    resolve("complete promise 1");
+                }
+                else{
+                    reject("not complete promise 1")
+                }
+            });
+            //console.log(promise1);
+            promise1.then((res)=>{
+                console.log(res);
+            });
+           promise1.catch((err)=>{
+                console.log(err);
+            });
+
+        </script>
+    </body>
+</html>

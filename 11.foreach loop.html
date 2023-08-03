@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            for each loop
+        </title>
+    </head>
+    <body>
+
+        <script>
+            //for loop method 
+           /* var num=[10,20,30,40];
+            for(let x=0;x<num.length;x++){
+                console.log(num[x]);
+            }   */
+
+            //for each method, for each loop nije akta function and ter modde aerkta function function receive hoy. je function ta receive hobe take abr create kore nite hobe 
+           /* var num=[10,20,30,40,50];
+            num.forEach(foreachFunction);
+           function foreachFunction(value){
+            console.log(value);
+            }   */
+
+            //another method
+           /* var num=[10,20,30,40,50,100,1000,10000];
+            num.forEach(function(value) //anynomus function 
+           {
+            console.log(value);
+           } ); */
+
+           //array square 
+          /* var num=[10,12,14,16,18,20];
+           var sqrNum=[];
+           num.forEach(function(value)
+           {
+                sqrNum.push(value*value);
+           });
+           console.log(sqrNum); */ 
+
+           //foreach 3 perameter
+           //je array deoa ace ter per element er sathe five kore add hobe.
+           var num=[10,15,20,25,30];
+           console.log(num);
+           num.forEach(function(value,index,array){ //foreach function er 3ta perameter thake, first perameter je array ta nilam ter item gulake access kore, second perameter array er index/digit ke access kore, third perameter full array ke access kore. 
+                array[index]=value+5;
+           });
+           console.log(num);
+
+        </script>
+    </body>
+</html>

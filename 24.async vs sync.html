@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            
+        </title>
+    </head>
+    <body>
+
+        <script>
+            //asynchronous vs synchronous 
+            //synchronous:: js hocce by default synchronous karon sync step by step kaj kore thake jamon akta task complete kore next task move kore. 
+            //asynchronous:: dori 5ta task ak sathe print hobe akon 3number task print hote or load nite kicu time lagbe akon ay task print hower pore baki gula print hobe but amra cacci 3number task print obsthy reke baki gula print hoye jabe then oita load ses hole or ter kaj ses hole seta print hobe, ar atake bole asynchronous system. ar ay asynchronous system kaj kore setTimeOut method diye. 
+        const task1=()=>{
+            console.log("task one");
+        }
+        const task2=()=>{
+            console.log("task two");
+        }
+        const dataLoading=()=>{
+            console.log("task three");
+        }
+        const task3=()=>{
+           setTimeout(dataLoading,3000)  //asynchronous method 
+        }
+        const task4=()=>{
+            console.log("task four");
+        }
+        task1();
+        task2();
+        task3();
+        task4();
+        
+        </script>
+    </body>
+</html>

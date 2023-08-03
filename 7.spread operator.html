@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            spread operator 
+        </title>
+    </head>
+    <body>
+
+        <script>
+           /* function addNumbers(x,y,z){
+                return x+y+z; 
+            }
+            let numbers=[10,20,30]
+            sum=addNumbers(...numbers); //spread operator system 
+            console.log(sum);
+
+            let number1=[20,50,...numbers]; //numbers array push 
+            console.log(number1); */
+            
+            let p1={                                    
+                name: "Rubel", 
+                Age: 23
+            }
+            let p2={
+                Institute: "UniSA", 
+                Occupation: "Student"
+            }
+            let p3={...p1,...p2}; //concat by spread operator 
+            console.log(p3);
+        </script>
+    </body>
+</html>

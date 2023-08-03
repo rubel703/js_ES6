@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            arrow function 
+        </title>
+    </head>
+    <body>
+
+        <script>
+//traditional function used by map and filter function method. 
+
+         /*   var studentsInfo=[
+                {
+                    Name: "Hossain Rubel",
+                    ID: "203-0032-006",
+                    CGPA: 3.90
+                },
+                {
+                    Name: "Fahad Uddin",
+                    ID: "211-0317-006",
+                    CGPA: 3.99
+                },
+                {
+                    Name: "Delwar Hossain",
+                    ID: "203-0087-006",
+                    CGPA: 3.85
+                },
+                {
+                    Name: "Imran Hossain",
+                    ID: "203-0289-006",
+                    CGPA: 3.70
+                }
+            ]
+            function studentsCheck(){
+               return studentsInfo.filter(function(value){
+                    return value.CGPA>=3.90;
+                }).map(function(value2){
+                    return value2.ID;
+                });
+
+                
+            }
+            console.log(studentsCheck()); */
+
+//arrow function used by map,filter and arrow method.
+
+            var studentsInfo=[
+                {
+                    Name: "Hossain Rubel",
+                    ID: "203-0032-006",
+                    CGPA: 3.90
+                },
+                
+                {
+                    Name: "Fahad Uddin",
+                    ID: "211-0317-006",
+                    CGPA: 3.99
+                },
+                {
+                    Name: "Delwar Hossain",
+                    ID: "203-0087-006",
+                    CGPA: 3.85
+                },
+                {
+                    Name: "Imran Hossain",
+                    ID: "203-0289-006",
+                    CGPA: 3.70
+                }
+            ]
+            let studentsCheck=()=>
+               studentsInfo.filter((value)=>value.CGPA>=3.9).map((value2)=>value2.Name);
+            console.log(studentsCheck());
+    
+        </script>
+    </body>
+</html>

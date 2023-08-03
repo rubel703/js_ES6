@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            array.find()
+        </title>
+    </head>
+    <body>
+
+        <script>
+            //find(callback,value) return the value of the first element that pass certain condition
+            //findIndex(callback,value) return the index of the first element that pass certain condition
+           /* let num=[3,45,12,33,68];
+            const evenNumber=(value,index,array)=>{
+                if(value%2==0){
+                    return value;
+                }
+            }
+            let firstEvenNumber=num.find(evenNumber);
+            let firstEvenNumberIndex=num.findIndex(evenNumber);
+            document.write(firstEvenNumber+", ");
+            document.write(firstEvenNumberIndex); */
+
+            //object find 
+            var students=[
+                {
+                    id:101,result:3.00
+                },
+                {
+                    id:102,result:3.50
+                },
+                {
+                    id:103,result:4.00
+                },
+                {
+                    id:104,result:4.50
+                }
+            ]
+            console.log(students.find(value=>value.result>4.00));
+            
+        </script>
+    </body>
+</html

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            object destructure
+        </title>
+    </head>
+    <body>
+
+        <script>
+    //object destructure:: ay method diye kaj korle output print korer smy object name lekha lagena only object property likhle hoy. 
+        /*    var studentsInfo={
+                    Name: "Hossain Rubel",
+                    ID: "203-0032-006",
+                    CGPA: 3.90
+                } 
+                const {Name,ID,CGPA}=studentsInfo; //object destructure
+                console.log(Name);
+                console.log(ID);
+                document.write(CGPA); */
+
+                var studentsInfo={
+                    Name: "Hossain Rubel",
+                    ID: "203-0032-006",
+                    CGPA: 3.90,
+                    language:{ //nested object destructure 
+                      local:"bangla",
+                      foreign:"english"  
+                    }
+                } 
+                const {Name,ID,CGPA,language}=studentsInfo;
+                document.write(Name+" "+language.foreign);
+                //document.write(language.foreign);
+        </script>
+    </body>
+</html>
